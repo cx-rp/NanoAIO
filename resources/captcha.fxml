@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.web.WebView?>
+
+<StackPane fx:id="rootPane" prefHeight="555.0" prefWidth="480.0" style="-fx-background-color: transparent;" styleClass="main-menu" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sneakerbot.controllers.CaptchaController">
+    <children>
+        <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="527.0" prefWidth="440.0" style="-fx-background-radius: 30; -fx-border-radius: 30;">
+            <bottom>
+                <HBox alignment="CENTER" prefHeight="13.0" prefWidth="440.0" style="-fx-background-color: #0B132B; -fx-background-radius: 0 0 10 10;" BorderPane.alignment="CENTER" />
+            </bottom>
+            <top>
+                <HBox alignment="CENTER_RIGHT" prefHeight="5.0" prefWidth="440.0" spacing="5.0" style="-fx-background-color: #0B132B; -fx-background-radius: 10 10 0 0;" BorderPane.alignment="CENTER">
+                    <children>
+                        <Label fx:id="titleLabel" alignment="CENTER" prefHeight="31.0" prefWidth="293.0" text="Captcha Harvester" textFill="WHITE" HBox.hgrow="ALWAYS">
+                            <font>
+                                <Font name="Lucida Console" size="21.0" />
+                            </font>
+                        </Label>
+                        <Button contentDisplay="GRAPHIC_ONLY" focusTraversable="false" layoutX="412.0" layoutY="18.0" minHeight="25.0" minWidth="25.0" mnemonicParsing="false" onAction="#minimize" prefHeight="25.0" prefWidth="33.0" style="-fx-graphic: url('icons/minimize.png');" styleClass="btn-menu" text="Button">
+                        </Button>
+                        <Button contentDisplay="GRAPHIC_ONLY" focusTraversable="false" layoutX="412.0" layoutY="18.0" maxHeight="25.0" maxWidth="25.0" minHeight="25.0" minWidth="25.0" mnemonicParsing="false" onAction="#close" prefHeight="25.0" style="-fx-graphic: url('icons/close.png');" styleClass="btn-menu" text="Button">
+                        </Button>
+                    </children>
+                    <padding>
+                        <Insets right="10.0" />
+                    </padding>
+                </HBox>
+            </top>
+            <center>
+                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #0B132B;" BorderPane.alignment="CENTER">
+               <children>
+                  <WebView fx:id="webview" prefHeight="489.0" prefWidth="519.0" />
+               </children>
+                </HBox>
+            </center>
+            <effect>
+                <DropShadow color="#3a506b" height="30.0" radius="14.5" width="30.0" />
+            </effect>
+        </BorderPane>
+    </children>
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+</StackPane>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="rootPane" style="-fx-background-color: transparent;" styleClass="main-menu" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sneakerbot.controllers.ExitController">
+    <children>
+        <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="246.0" prefWidth="440.0" style="-fx-background-radius: 30; -fx-border-radius: 30;">
+            <bottom>
+                <HBox alignment="CENTER" prefHeight="49.0" prefWidth="550.0" style="-fx-background-color: #0B132B; -fx-background-radius: 0 0 10 10;" BorderPane.alignment="CENTER" />
+            </bottom>
+            <top>
+                <HBox alignment="CENTER_RIGHT" prefHeight="40.0" prefWidth="440.0" spacing="5.0" style="-fx-background-color: #0B132B; -fx-background-radius: 10 10 0 0;" BorderPane.alignment="CENTER">
+                    <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="31.0" prefWidth="549.0" text="Confirm exit?" textFill="WHITE" HBox.hgrow="ALWAYS">
+                            <font>
+                                <Font name="Lucida Console" size="21.0" />
+                            </font>
+                        </Label>
+                    </children>
+                    <padding>
+                        <Insets right="10.0" />
+                    </padding>
+                </HBox>
+            </top>
+            <center>
+                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #0B132B;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="confirmBtn" mnemonicParsing="false" style="-fx-graphic: url('icons/confirm.png');" styleClass="btn-menu" text="Confirm" textAlignment="RIGHT" />
+                  <Button fx:id="cancelBtn" mnemonicParsing="false" style="-fx-graphic: url('icons/cancel.png');" styleClass="btn-menu" text="Cancel" />
+               </children>
+                </HBox>
+            </center>
+            <effect>
+                <DropShadow color="#3a506b" height="30.0" radius="14.5" width="30.0" />
+            </effect>
+        </BorderPane>
+    </children>
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+</StackPane>

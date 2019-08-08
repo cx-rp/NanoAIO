@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="mainPanel" prefHeight="423.0" prefWidth="1280.0" styleClass="main-menu" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sneakerbot.controllers.SettingsController">
+   <children>
+      <ListView fx:id="profileList" layoutX="344.0" layoutY="153.0" prefHeight="52.0" prefWidth="94.0" />
+      <Button fx:id="saveProxyBtn" layoutX="933.0" layoutY="375.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="75.0" text="Save" />
+      <Button fx:id="saveAccBtn" layoutX="1114.0" layoutY="375.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="75.0" text="Save" />
+      <Button fx:id="createBtn" layoutX="1191.0" layoutY="375.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="75.0" text="Generate" />
+      <Button fx:id="deleteBtn" layoutX="444.0" layoutY="179.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="94.0" text="Delete" />
+      <ChoiceBox fx:id="sitekeyBox" layoutX="344.0" layoutY="14.0" prefHeight="26.0" prefWidth="333.0" />
+      <TextField fx:id="apiKeyTxt" layoutX="684.0" layoutY="14.0" prefHeight="26.0" prefWidth="233.0" promptText="2Captcha API key" />
+      <Button fx:id="harvesterBtn" layoutX="344.0" layoutY="48.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="131.0" text="Start Harvester" />
+      <Button fx:id="captchaWindowBtn" layoutX="491.0" layoutY="48.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="186.0" text="Open Captcha Window" />
+      <AnchorPane prefHeight="410.0" prefWidth="344.0" style="-fx-border-width: 2;">
+         <children>
+            <TextField fx:id="firstnameTxt" layoutX="14.0" layoutY="14.0" prefHeight="26.0" prefWidth="152.0" promptText="First Name" />
+            <TextField fx:id="lastnameTxt" layoutX="177.0" layoutY="14.0" prefHeight="26.0" prefWidth="152.0" promptText="Last Name" />
+            <TextField fx:id="addressTxt" layoutX="14.0" layoutY="52.0" prefHeight="26.0" prefWidth="315.0" promptText="Address" />
+            <TextField fx:id="address2Txt" layoutX="14.0" layoutY="90.0" prefHeight="26.0" prefWidth="315.0" promptText="Address #2" />
+            <TextField fx:id="cityTxt" layoutX="14.0" layoutY="128.0" prefHeight="26.0" prefWidth="124.0" promptText="City" />
+            <ComboBox fx:id="stateBox" layoutX="143.0" layoutY="128.0" prefHeight="25.0" prefWidth="94.0" promptText="State" />
+            <TextField fx:id="zipcodeTxt" layoutX="243.0" layoutY="128.0" prefHeight="26.0" prefWidth="86.0" promptText="Zip Code" />
+            <TextField fx:id="emailTxt" layoutX="14.0" layoutY="166.0" prefHeight="26.0" prefWidth="315.0" promptText="Email" />
+            <TextField fx:id="phoneTxt" layoutX="14.0" layoutY="204.0" prefHeight="26.0" prefWidth="142.0" promptText="Phone" />
+            <TextField fx:id="cardTxt" layoutX="14.0" layoutY="265.0" prefHeight="26.0" prefWidth="315.0" promptText="Card number" />
+            <ComboBox fx:id="monthBox" layoutX="14.0" layoutY="303.0" prefHeight="25.0" prefWidth="124.0" promptText="Month" />
+            <ComboBox fx:id="yearBox" layoutX="148.0" layoutY="303.0" prefHeight="25.0" prefWidth="86.0" promptText="Year" />
+            <TextField fx:id="cvvTxt" layoutX="243.0" layoutY="303.0" prefHeight="26.0" prefWidth="86.0" promptText="CVV" />
+            <TextField fx:id="profilenameTxt" layoutX="143.0" layoutY="370.0" prefHeight="26.0" prefWidth="106.0" promptText="Profile Name" />
+            <Button fx:id="saveProfileBtn" layoutX="257.0" layoutY="370.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="75.0" text="Save" />
+         </children>
+      </AnchorPane>
+      <TextArea fx:id="accountTxt" layoutX="1114.0" layoutY="8.0" prefHeight="356.0" prefWidth="152.0" promptText="Accounts" />
+      <TextArea fx:id="proxyTxt" layoutX="932.0" layoutY="8.0" prefHeight="356.0" prefWidth="152.0" promptText="Proxies" />
+   </children>
+</AnchorPane>

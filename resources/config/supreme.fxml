@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="391.0" prefWidth="1280.0" styleClass="main-menu" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sneakerbot.controllers.tasks.SupremeController">
+   <children>
+      <TableView fx:id="table" prefHeight="312.0" prefWidth="1280.0">
+         <columns>
+            <TableColumn fx:id="productCol" editable="false" prefWidth="171.0" resizable="false" text="Product" />
+            <TableColumn fx:id="sizeCol" editable="false" minWidth="0.0" prefWidth="57.0" resizable="false" text="Size" />
+            <TableColumn fx:id="colorCol" editable="false" prefWidth="119.0" resizable="false" text="Color" />
+            <TableColumn fx:id="profileCol" editable="false" prefWidth="136.0" resizable="false" text="Profile" />
+            <TableColumn fx:id="categoryCol" editable="false" prefWidth="113.0" resizable="false" text="Category" />
+            <TableColumn fx:id="proxyCol" editable="false" prefWidth="248.0" resizable="false" text="Proxy" />
+            <TableColumn fx:id="statusCol" editable="false" prefWidth="371.0" resizable="false" sortable="false" text="Status" />
+            <TableColumn fx:id="actionCol" editable="false" prefWidth="50.0" resizable="false" sortable="false" text="Action" />
+         </columns>
+      </TableView>
+      <TextField fx:id="keywordTxt" layoutX="14.0" layoutY="319.0" prefHeight="25.0" prefWidth="150.0" promptText="Keyword">
+         <tooltip>
+            <Tooltip text="Keyword format: x, y, z (box, logo, hooded)" />
+         </tooltip></TextField>
+      <ChoiceBox fx:id="sizeBox" layoutX="171.0" layoutY="319.0" prefHeight="25.0" prefWidth="150.0">
+         <tooltip>
+            <Tooltip text="Sizes; If item has no size, use &quot;N/A&quot;" />
+         </tooltip></ChoiceBox>
+      <TextField fx:id="colorTxt" layoutX="14.0" layoutY="352.0" prefHeight="25.0" prefWidth="150.0" promptText="Color">
+         <tooltip>
+            <Tooltip text="Color format: x,y,z (Black,Red,Green)" />
+         </tooltip></TextField>
+      <TextField fx:id="releaseTimeTxt" layoutX="171.0" layoutY="352.0" prefHeight="25.0" prefWidth="150.0" promptText="Release Time (GMT)">
+         <tooltip>
+            <Tooltip text="Enter the release time. Format: Thu, 21 Jun 2018 15:00:00 GMT" />
+         </tooltip></TextField>
+      <ChoiceBox fx:id="categoryBox" layoutX="328.0" layoutY="319.0" prefHeight="25.0" prefWidth="150.0">
+         <tooltip>
+            <Tooltip text="Select the correct category of the item" />
+         </tooltip></ChoiceBox>
+      <ChoiceBox fx:id="profileBox" layoutX="328.0" layoutY="352.0" prefHeight="25.0" prefWidth="150.0">
+         <tooltip>
+            <Tooltip text="Profiles; This must be set in order to create tasks." />
+         </tooltip></ChoiceBox>
+      <Button fx:id="startAllBtn" layoutX="939.0" layoutY="323.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="160.0" style="-fx-background-color: #4D6B53;" text="Start All Tasks" />
+      <Button fx:id="stopAllBtn" layoutX="1106.0" layoutY="323.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="160.0" style="-fx-background-color: #4f0000;" text="Remove All Tasks" />
+      <Spinner fx:id="taskAmountSpinner" editable="true" layoutX="1095.0" layoutY="356.0" prefHeight="26.0" prefWidth="61.0">
+         <tooltip>
+            <Tooltip text="Number of tasks to be created" />
+         </tooltip></Spinner>
+      <Button fx:id="createTaskBtn" layoutX="1160.0" layoutY="356.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="106.0" text="Create Task" />
+      <Button fx:id="refreshBtn" layoutX="485.0" layoutY="352.0" minWidth="22.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="25.0" style="-fx-graphic: url('icons/refresh.png');" styleClass="btn-menu">
+         <tooltip>
+            <Tooltip text="Refresh profiles" wrapText="true" />
+         </tooltip></Button>
+   </children>
+</AnchorPane>

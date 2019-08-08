@@ -1,0 +1,348 @@
+.main-menu {
+	-fx-background-color:  #0B132B;
+	-fx-font: 12px "Lucida Console";
+}
+
+.pane-menu {
+    -fx-background-color:  #0B132B;
+}
+
+.captchaBox {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-opacity: 0;
+}
+
+.tab-pane {
+    -fx-tab-min-width:90px;
+}
+
+.tab {
+    -fx-background-insets: 0 1 0 1,0,0;
+	-fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+.tab-pane .tab {
+    -fx-background-color: #1C2541;
+}
+
+.tab-pane .tab:selected {
+    -fx-background-color: #0B132B;
+	-fx-background-radius: 0;
+	-fx-background-insets: 0;
+	-fx-border-width: 1 0 1 0;
+	-fx-border-color: #70A359;
+}
+
+.tab .tab-label { 
+    -fx-alignment: CENTER;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+
+.tab:selected .tab-label { 
+    -fx-alignment: CENTER;
+    -fx-text-fill: #70A359;
+}
+
+.table-column {
+  -fx-alignment: CENTER;
+}
+
+.table-view {
+	-fx-background-color: #1C2541;
+   	-fx-text-fill: #FFFFFF;
+	-fx-font-weight: bold;
+	-fx-table-cell-border-color: transparent;
+}
+
+.table-view:focused {
+    -fx-background-color: #1C2541;
+}
+
+.table-view .filler {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #0B132B;
+}
+
+.table-view .column-header-background .label{
+    -fx-background-color: transparent;
+    -fx-text-fill: #FFFFFF;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+}
+
+.table-view .table-cell {
+	-fx-border-color: transparent;
+}
+
+.table-row-cell {
+    -fx-background-color: #1C2541;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em; /* 0 */
+}
+
+.table-row-cell:filled {
+   /* -fx-border-color: black;
+    -fx-border-width: 0 1 1 1;*/
+}
+
+.table-row-cell:empty {
+    -fx-background-color: -fx-table-cell-border-color, #1C2541;
+}
+
+.table-row-cell:empty .table-cell {
+	-fx-border-width: 0px;
+}
+
+.table-row-cell:selected {
+    -fx-background-insets: 0;
+    -fx-background-radius: 1;
+}
+
+.table-row-cell:hover {
+    -fx-background-color: #3A506B;
+    -fx-background-insets: 0;
+    -fx-background-radius: 1;
+}
+
+.corner {-fx-background-color: transparent;}
+
+.table-view > .virtual-flow > .scroll-bar:vertical,
+.table-view > .virtual-flow > .scroll-bar:vertical > .track,
+.table-view > .virtual-flow > .scroll-bar:vertical > .track-background, 
+.table-view > .virtual-flow > .scroll-bar:horizontal,
+.table-view > .virtual-flow > .scroll-bar:horizontal > .track,
+.table-view > .virtual-flow > .scroll-bar:horizontal > .track-background {
+    -fx-background-color: transparent;
+}
+
+/* The main scrollbar **thumb** CSS class which we drag every time (movable) */
+.table-view .scroll-bar:horizontal .thumb,
+.table-view .scroll-bar:vertical .thumb {
+    -fx-background-color: #1C2541;
+
+}
+
+.table-view .scroll-bar:horizontal:hover .thumb ,
+.table-view .scroll-bar:horizontal:pressed .thumb ,
+.table-view .scroll-bar:vertical:hover .thumb,
+.table-view .scroll-bar:vertical:pressed .thumb{
+     -fx-background-color: #3A506B;
+}
+
+.spinner {
+	-fx-focus-color: transparent;
+	-fx-faint-focus-color: transparent;
+}
+
+.progress-bar .track {
+    -fx-background-color: #1C2541;
+}
+ 
+.progress-bar .bar { 
+    -fx-background-color: #3A506B;
+}
+
+.list-view {
+	-fx-text-fill: #FFFFFF;
+	-fx-font-weight: bold;
+	-fx-background-insets: 0;
+    -fx-text-fill: #d4d4d4;
+    -fx-control-inner-background: #1C2541;
+    -fx-text-box-border: transparent;
+    -fx-faint-focus-color: transparent;
+    -fx-focus-color: transparent;
+}
+
+.list-view .list-cell:even {
+    -fx-background-color: #1C2541;
+}
+
+.list-view .list-cell:odd {
+    -fx-background-color: #1C2541;
+}
+
+.list-view .list-cell:hover {
+    -fx-background-color: #3A506B;
+    -fx-background-insets: 0;
+    -fx-background-radius: 1;
+}
+
+.list-view > .virtual-flow > .scroll-bar:vertical,
+.list-view > .virtual-flow > .scroll-bar:vertical > .track,
+.list-view > .virtual-flow > .scroll-bar:vertical > .track-background, 
+.list-view > .virtual-flow > .scroll-bar:horizontal,
+.list-view > .virtual-flow > .scroll-bar:horizontal > .track,
+.list-view > .virtual-flow > .scroll-bar:horizontal > .track-background {
+    -fx-background-color: transparent;
+}
+
+/* The main scrollbar **thumb** CSS class which we drag every time (movable) */
+.list-view .scroll-bar:horizontal .thumb,
+.list-view .scroll-bar:vertical .thumb {
+    -fx-background-color: #1C2541;
+
+}
+
+.list-view .scroll-bar:horizontal:hover .thumb ,
+.list-view .scroll-bar:horizontal:pressed .thumb ,
+.list-view .scroll-bar:vertical:hover .thumb,
+.list-view .scroll-bar:vertical:pressed .thumb{
+     -fx-background-color: #3A506B;
+}
+
+.text-area {
+    -fx-control-inner-background: #1C2541;
+    -fx-text-box-border: transparent;
+    -fx-faint-focus-color: transparent;
+    -fx-focus-color: transparent;
+    -fx-prompt-text-fill: #a2a2a2;
+}
+
+.text-area .content {
+    -fx-background-radius: 0 
+}
+
+.text-area .scroll-bar:vertical,
+.text-area .scroll-bar:vertical .track,
+.text-area .scroll-bar:vertical .track-background, 
+.text-area .scroll-bar:horizontal,
+.text-area .scroll-bar:horizontal .track,
+.text-area .scroll-bar:horizontal .track-background {
+    -fx-background-color: transparent;
+}
+
+/* The main scrollbar **thumb** CSS class which we drag every time (movable) */
+.text-area .scroll-bar:horizontal .thumb,
+.text-area .scroll-bar:vertical .thumb {
+    -fx-background-color: #1C2541;
+
+}
+
+.text-area .scroll-bar:horizontal:hover .thumb ,
+.text-area .scroll-bar:horizontal:pressed .thumb ,
+.text-area .scroll-bar:vertical:hover .thumb,
+.text-area .scroll-bar:vertical:pressed .thumb{
+     -fx-background-color: #3A506B;
+}
+
+.spinner {
+    -fx-text-box-border: transparent;
+    -fx-faint-focus-color: transparent;
+    -fx-focus-color: transparent;
+}
+
+.spinner .increment-arrow-button,
+.spinner .decrement-arrow-button {
+    -fx-background-color: #1C2541;
+	-fx-mark-color: #FFFFFF; 
+}
+
+.spinner .increment-arrow-button:hover,
+.spinner .decrement-arrow-button:hover {
+    -fx-background-color: #3A506B;
+}
+
+.check-box {
+	-fx-text-fill: #FFFFFF;
+	-fx-font-weight: bold;
+}
+
+.check-box .box {
+	-fx-background-color: #1C2541;
+	-fx-border-color: grey;
+	-fx-border-radius: 0px; 
+}
+
+.choice-box {
+  -fx-background-color: #1C2541;
+  -fx-mark-color: #FFFFFF;
+}
+
+.choice-box .context-menu {
+	-fx-background-color: #1C2541;
+}
+
+.choice-box .menu-item:focused {
+	-fx-background-color: #3A506B;
+}
+
+.choice-box .menu-item > .label {
+	-fx-text-fill: #FFFFFF;
+	-fx-font-weight: bold;
+}
+
+.choice-box > .label {
+	-fx-text-fill: #FFFFFF;
+	-fx-font-weight: bold;
+}
+
+.combo-box {
+	-fx-background-color: #1C2541;
+	-fx-mark-color: #FFFFFF; 
+  	-fx-text-fill: #FFFFFF;
+	-fx-font-weight: bold;
+}
+
+.combo-box .cell:selected {
+  	-fx-text-fill: #FFFFFF;
+	-fx-font-weight: bold;
+}
+
+.text-input {
+	-fx-background-color: #1C2541;
+	-fx-text-fill: #FFFFFF;
+	-fx-font-weight: bold;
+}
+
+.button {
+	-fx-background-color: #1C2541;
+	-fx-text-fill: #FFFFFF;
+	-fx-font-weight: bold;
+}
+
+.button:pressed:hover {
+    -fx-scale-y: 0.9;
+    -fx-scale-x: 0.9;
+}
+
+.button:hover {
+    -fx-background-color: #3A506B;
+    -fx-scale-y: 1.1;
+}
+
+.btn-menu{
+    -fx-background-color: transparent;
+}
+
+.btn-menu:hover{
+    -fx-background-color: transparent;
+    -fx-scale-y: 1;
+}
+
+.btn-menu:focused{
+
+}
+
+.text-field-login {
+    -fx-focus-color: grey;
+    -fx-background-radius: 15 15 15 15;
+    -fx-border-radius: 15 15 15 15;
+}
+
+#text-field-validation-error {
+    -fx-background-color: #ffcccc;
+    -fx-focus-color: red;
+    -fx-border-color: red;
+    -fx-border-width: 2px;
+}
