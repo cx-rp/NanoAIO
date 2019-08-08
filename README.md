@@ -7,3 +7,4 @@ Credits to whoever made the updater.
 # Preview:
 
 ![Login](https://i.imgur.com/qGJcxge.png)
+![Preview](https://i.imgur.com/xVbRtcM.png)
